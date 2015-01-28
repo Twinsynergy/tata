@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gallery - Tata Young</title>
+<meta name="description" content="News Update - Tata Young" />
+<meta name="keywords" content="tata young" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<script src="../js/modernizr.custom.97074.js"></script>
+
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="gallery">
+	
+<!-- Start Content -->
+<div class="container">
+
+	<div id="logo"><a href="../index.html">Tatayoung</a></div>
+
+	<!-- start menu -->
+	<div id="mainmenu">
+		<ul>
+			<li class="timeline"><a href="#">Timeline</a></li>
+			<li><a href="../biography.html">Biography</a></li>
+			<li><a href="../news-update.html">News Update</a></li>
+			<li><a href="../album.html">Album</a></li>
+			<li><a class="active" href="../gallery.html">Gallery</a></li>
+			<li><a href="../contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<!-- Block Biography -->
+	<div class="block-center pdt80">
+
+		<h1>Gallery</h1>
+		<ul id="block-gallery" class="block-gallery">
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G001.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G002.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G003.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G004.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G005.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G006.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G007.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G008.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G009.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>	
+				<a href="#">
+					<img src="img/album/thumb/G010.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/G011.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/album/thumb/A001.png" />
+					<div><span>Chocolate Ville</span></div>
+				</a>
+			</li>
+		</ul>
+		
+		<div class="pagination clearfix">
+			<a class="active" hef="#"><span class="current">1</span></a>
+			<a hef="#">2</a>
+			<a hef="#">3</a>
+			<a hef="#">4</a>
+		</div>
+
+
+	</div>
+	<!-- End Content -->
+	
+</div>
+
+<!-- Google CDN jQuery with fallback to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- custom album plugin -->
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+<script type="text/javascript">
+	$(function() {
+
+		$(' #block-gallery > li ').each( function() { $(this).hoverdir({
+			hoverDelay : 75
+		}); } );
+
+	});
+</script>
+</body>
+</html>

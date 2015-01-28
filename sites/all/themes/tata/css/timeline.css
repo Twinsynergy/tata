@@ -1,0 +1,138 @@
+
+#timeline a{
+	color: #fff;
+	text-decoration: none;
+}
+.menu_timeline{
+	width:146px;
+	height: 70px;
+	display:block;
+	font-size:11px;
+	text-align:left;
+	text-indent:-99999px;
+	background: url(../img/icons/icon-timeline.png) no-repeat;
+}
+	.menu_timeline:hover,
+	.menu_timeline.active{ background: transparent url(../img/icons/icon-timeline-hover.png) 0 0 no-repeat; }
+#left_sidebar{
+	width: 850px;
+}
+.sidebar_first{
+	width: 150px;
+	float: left;
+	padding-top: 100px;
+}
+.content_inner{
+	width: 650px;
+	height: 100%;
+	min-height: 100%;
+	float: left;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: transparent url(../img/bg/vertical_timeline.png) center center repeat-y;
+}
+
+/* Year time line */
+.menu-name-menu-year-time-line a.active{
+	color: #f2238e !important;
+	font-size: 1.5em;
+}
+
+.month-box-timeline{
+	width: 500px;
+	height: 250px;
+	padding: 25px;
+	margin: 0 auto;
+	background: #dedee0;
+	position: relative;
+	margin-bottom: 80px;
+}
+	.month-box-timeline.views-row-last{ margin-bottom: 10px; }
+.month_timeline{
+	font-family: "Freckle Face", sans-serif;
+	font-size: 30px;
+	background: transparent url(../img/bg/date_timeline.png) 0 0 no-repeat;
+	width: 240px;
+	height: 123px;
+	position: absolute;
+	top: -40px;
+	left: -40px;
+}
+	.month_timeline span{
+		display: inline-block;
+		position: absolute;
+		top: 50px;
+		left: 30px;
+		/* Safari */
+		-webkit-transform: rotate(-20deg);
+
+		/* Firefox */
+		-moz-transform: rotate(-20deg);
+
+		/* IE */
+		-ms-transform: rotate(-20deg);
+
+		/* Opera */
+		-o-transform: rotate(-20deg);
+
+		/* Internet Explorer */
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	}
+.cover_timeline img{
+	border: 10px solid #fff;
+	float: left;
+}
+.month-box-timeline h3{ float: right; color: #000; text-align: left; font-size: 25px; width: 230px; }
+.body_timeline{
+	width: 230px;
+	float: right;
+	height: 130px;
+	overflow: hidden;
+}
+.body_timeline{ color: #894ccd !important; }
+
+
+/*Pop up*/
+#colorbox{ background: transparent !important; }
+#cboxContent{ background-color: #dedee0; margin-bottom: 0; }
+#cboxTitle{ display: none !important; }
+#colorbox .cover_popup{ width: 370px; height: 490px; overflow: hidden; float: left; }
+#colorbox .content_popup{
+	float: left;
+	width: 310px;
+	padding: 35px 20px 20px 35px;
+}
+#colorbox .date_popup{ color: #f2238e; }
+#colorbox h4{ color: #000; font-size: 25px; }
+#colorbox .detial_popup{ color: #894ccd; }
+#cboxClose{
+	width: 28px !important;
+	height: 27px !important;
+	background: transparent url(../img/icons/close.png) 0 0 no-repeat;
+	top: 20px;
+	right: 20px;
+}
+#cboxClose:hover{ background: transparent url(../img/icons/close.png) 0 0 no-repeat; }
+
+.pager-load-more li{
+	width: 65px;
+	height: 44px;	
+	float: none;
+	position: relative;
+}
+	.pager-load-more li.pager-next{
+		display: block !important;
+	}
+	.pager-load-more li a{
+		width: 65px;
+		height: 44px;	
+		background: transparent url(../img/icons/arrow-down.png) 0 0 no-repeat;
+		position: absolute;
+		left: 272px;
+	}
+	.ajax-progress .throbber {
+	  background: transparent url(../img/icons/reload.gif) no-repeat 0 0;
+	  height: 16px;
+	  margin: 2px;
+	  width: 16px;
+	}

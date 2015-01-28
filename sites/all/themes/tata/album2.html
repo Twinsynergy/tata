@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Album - Tata Young</title>
+<meta name="description" content="News Update - Tata Young" />
+<meta name="keywords" content="tata young" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body class="album">
+	
+<!-- Start Content -->
+<div class="container">
+
+	<div id="logo"><a href="../index.html">Tatayoung</a></div>
+
+	<!-- start menu -->
+	<div id="mainmenu">
+		<ul>
+			<li class="timeline"><a href="#">Timeline</a></li>
+			<li><a href="../biography.html">Biography</a></li>
+			<li><a href="../news-update.html">News Update</a></li>
+			<li><a class="active" href="../album.html">Album</a></li>
+			<li><a href="../gallery.html">Gallery</a></li>
+			<li><a href="../contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<!-- Block Biography -->
+	<div class="block-center pdt80">
+
+		<h1>Album</h1>
+
+		<div id="wrapper">
+			<div id="carousel-wrapper">
+				<div id="carousel">
+					<span id="A01">
+						<div class="block-detail">
+							<div class="block-thumb-l"><img src="../img/album/thumb/A001-B.png" /></div>
+							<div class="block-content-r">
+								<h2>I Believe (1st English debut album) : 2004</h2>
+								<ul>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+									<li>Everybody Doesn't</li>
+								</ul>
+							</div>
+						</div>
+					</span>
+					<span id="bugs"><img src="img/large/bugs.jpg" /></span>
+					<span id="cars"><img src="img/large/cars.jpg" /></span>
+					<span id="incred"><img src="img/large/incred.jpg" /></span>
+					<span id="monsters"><img src="img/large/monsters.jpg" /></span>
+					<span id="nemo"><img src="img/large/nemo.jpg" /></span>
+					<span id="rat"><img src="img/large/rat.jpg" /></span>
+					<span id="toystory"><img src="img/large/toystory.jpg" /></span>
+					<span id="up"><img src="img/large/up.jpg" /></span>
+					<span id="walle"><img src="img/large/walle.jpg" /></span>
+				</div>
+			</div>
+			<div id="thumbs-wrapper">
+				<div id="thumbs">
+					<a href="#A01" class="selected"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#bugs"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#cars"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#incred"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#monsters"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#nemo"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#rat"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#toystory"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#up"><img src="../img/album/thumb/A001.png" /></a>
+					<a href="#walle"><img src="../img/album/thumb/A001.png" /></a>
+				</div>
+				<a id="prev" href="#"></a>
+				<a id="next" href="#"></a>
+			</div>
+		</div>
+
+	</div>
+	<!-- End Content -->
+	
+</div>
+
+<!-- Google CDN jQuery with fallback to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- custom album plugin -->
+<script src="../js/jquery.carouFredSel-6.0.4-packed.js"></script>
+	
+		<script type="text/javascript">
+			$(function() {
+				
+				$('#carousel span').append('<img src="img/gui/carousel_glare.png" class="glare" />');
+				$('#thumbs a').append('<img src="img/gui/carousel_glare_small.png" class="glare" />');
+
+				$('#carousel').carouFredSel({
+					responsive: true,
+					circular: false,
+					auto: false,
+					items: {
+						visible: 1,
+						width: 200,
+						height: '56%'
+					},
+					scroll: {
+						fx: 'directscroll'
+					}
+				});
+
+				$('#thumbs').carouFredSel({
+					responsive: true,
+					circular: false,
+					infinite: false,
+					auto: false,
+					prev: '#prev',
+					next: '#next',
+					items: {
+						visible: {
+							min: 2,
+							max: 6
+						},
+						width: 150,
+						height: '66%'
+					}
+				});
+
+				$('#thumbs a').click(function() {
+					$('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+					$('#thumbs a').removeClass('selected');
+					$(this).addClass('selected');
+					return false;
+				});
+
+			});
+		</script>
+</body>
+</html>

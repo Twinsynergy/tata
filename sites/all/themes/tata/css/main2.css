@@ -1,0 +1,132 @@
+/*****  CSS UPDATE 2 *****/
+
+h2.page_header {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size:28px;
+	font-weight:normal;
+	text-transform:uppercase;
+	color:#e6cabf;
+}
+
+/***** ALBUM *****/
+#album_slide,
+#nav_slide{
+	border: none;
+	background-color: transparent;
+}
+#album_slide{
+	height: 260px;
+	overflow: hidden;
+} 
+	#album_slide h3{ margin-top: 0; color: #f7d1c3; }
+	#album_slide .album_info{
+		float: right;
+		width: 530px;
+		padding-left: 30px;
+	}
+	#album_slide .album_desp ul{ margin: 0; padding: 0; }
+	#album_slide .album_desp ul li{ 
+		float: left; 
+		list-style: disc;
+		width: 250px; 
+	}
+	#album_slide li img{
+		width: auto;
+		float: left;
+	}
+	#nav_slide li{ cursor: pointer; color: #acabab; font-size: 11px; } 
+	#nav_slide li.flex-active-slide{ color: #f2f2f2; }
+	.flex-direction-nav a{
+		width: 32px;
+		height: 32px;
+		background: url(../img/icons/controls.png) no-repeat;
+	}
+	.flex-direction-nav a.flex-prev{ background-position: 0 -32px; }
+	.flex-direction-nav a.flex-next{ background-position: -43px -32px; }
+	.flexslider:hover .flex-next,
+	.flexslider:hover .flex-prev{ opacity: 1; }
+	.flex-direction-nav a.flex-next:before,
+	.flex-direction-nav a.flex-prev:before{ content: " "; }
+
+/***** Gallery *****/
+.block-gallery {
+	list-style: none;
+	width: 800px;
+	max-height: 600px;
+	position: relative;
+	margin: 20px auto;
+	padding: 0;
+}
+.block-gallery li {
+	float: left;
+	overflow:hidden;
+	width:200px;
+	height:200px;
+	background: #fff;
+	/*padding: 8px;*/
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.block-gallery li a,
+.block-gallery li a img {
+	display: block;
+	width:200px;
+	height:200px;
+	position: relative;
+}
+.block-gallery li a {
+	overflow: hidden;
+}
+.block-gallery li a div {
+	position: absolute;
+	background: #333;
+	background: rgba(24,24,24,0.8);
+	width: 100%;
+	height: 100%;
+	/*border:4px solid #f7d1c3;*/
+}
+.block-gallery li a div span {
+	display: block;
+	padding: 10px 0;
+	margin: 40px 20px 20px 20px;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+
+
+.pager {
+	padding: 3px;
+	text-align:center;
+}
+	
+.pager li{
+	width: 10px;
+	height: 10px;
+	padding: 0 !important;
+	display: inline-block !important;
+	margin-bottom: 0 !important;
+
+}
+.pager li a{
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	display: inline-block;
+	margin-right: 5px;
+	text-indent: -9999px;
+	background: url(../img/icons/nav-dot.png) no-repeat;
+}
+.pager li.pager-current{
+	width: 10px;
+	height: 10px;
+	background: url(../img/icons/nav-dot-active.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.pager li.pager-next,
+.pager li.pager-last,
+.pager li.pager-first,
+.pager li.pager-previous{ display: none !important; }

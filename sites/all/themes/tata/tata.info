@@ -1,0 +1,28 @@
+name = Tata
+description = Tata theme by Twinsynergy.co.th
+version = VERSION
+core = 7.x
+screenshot = screenshot.jpg
+version = 1.0
+
+stylesheets[all][] = css/main.css
+scripts[] = js/jquery.mCustomScrollbar.concat.min.js
+scripts[] = js/jquery.hoverdir.js
+scripts[] = js/modernizr.custom.97074.js
+scripts[] = js/cycle.js
+scripts[] = js/tata.js
+
+features[] = logo
+features[] = name
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+;Regions
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[footer] = Footer
