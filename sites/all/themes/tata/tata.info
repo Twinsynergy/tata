@@ -6,10 +6,13 @@ screenshot = screenshot.jpg
 version = 1.0
 
 stylesheets[all][] = css/main.css
+
 scripts[] = js/jquery.mCustomScrollbar.concat.min.js
 scripts[] = js/jquery.hoverdir.js
-scripts[] = js/modernizr.custom.97074.js
+;scripts[] = js/modernizr.custom.97074.js
+scripts[] = js/modernizr.custom.26633.js
 scripts[] = js/cycle.js
+scripts[] = js/jquery.gridrotator.js
 scripts[] = js/tata.js
 
 features[] = logo
